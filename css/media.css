@@ -1,0 +1,141 @@
+@media(max-width:1450px) {
+    .header {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .hero{
+        padding: 28px 10px 0 10px;
+    }
+
+    .contact {
+        padding: 129px 10px 127px 10px;
+    }
+
+    .footer {
+        padding: 0px 10px;
+    }
+}
+
+@media(max-width:1300px){
+    .hero-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .iner {
+        padding: 61px 10px 114px 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width:980px){
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:850px) {
+    body.hidden{
+        overflow-y: hidden;
+    }
+    .nav {
+        position: absolute;
+        top: 84px;
+        left: 110%;
+        right: 0;
+        height: 100vh;
+        background: #ccc;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        overflow-x: hidden;
+        transition: 0.4s linear;
+    }
+
+    .nav.active{
+        left: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav ul li {
+        margin-right: 0px;
+    }
+
+    .nav ul li:last-child {
+        margin-right: 0px;
+    }
+
+    .burger-menu{
+        display: block;
+        width: 60px;
+        height: 40px;
+        background-image: url(../images/burger-menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s linear;
+    }
+
+    .burger-menu.active{
+        background-image: url(../images/close.svg);
+        transform: rotate(360deg);
+    }
+
+
+}
+
+@media(max-width:768px){
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media(max-width:590px) {
+
+    .iner-content {
+        width: 100%;
+    }
+
+    .hero-block {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hero-link {
+        width: 268px;
+    }
+
+    .footer-botom {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+@media(max-width:450px) {
+    .hero-block {
+justify-content: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+}
